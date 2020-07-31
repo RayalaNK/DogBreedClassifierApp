@@ -1,14 +1,12 @@
 # DogBreedClassifierApp
 
-# Disaster Response Pipeline
-
 ##  Overview
 
 
-A machine learning application pipeline that is capable of curating the text messages and classify them. This application has a flask based web UI to assist emergency worker to classify caller's input into several categories so they can route them to its relevant specialized organization. The training data is provided by Figure Eight.
+The objective of this application is to primarily predict whether a given image is of a dog or of a human using Convolutional Neural Networks. If it's either of them, the application will need to further determine the kind of breed the dog is, or which dog breed the human most resembles. When the given image is neither a dog nor a human, predicting the breed wouldn't execute!
 
 
-**Dependencies**
+**Jupyter Notebook**
 
 - Interpreter: Python 3.6+
 - Web : flask, plotly
@@ -18,15 +16,14 @@ A machine learning application pipeline that is capable of curating the text mes
 
 **File Descriptions**
 
- **data:**
-- disaster_categories.csv: File containing message categories
-- disaster_messages.csv: File containing the disaster messages
-- etl_pipeline.py: ETL pipeline to process messages and categories into a SQLite database
-- DisasterResponse.db: SQLite database that contains both messages and categories
+ **folder/files:**
+- dog_app.ipynb: File containing message categories
+- haarcascades/haarcascade_frontalface_alt: Haar feature-based cascade classifiers for face detection
+- images folder: Images for the notebook and to test the algorithm are found here
+- data/dog_names.csv: Contains names of the dog 
 
  **model:**
-- train_classifier.py: ML pipeline to build, train, evaluate, and save a classifer
-- classifier.pkl: Pick file of trained model
+- saved_models folder: contains the trained models such as weights.best.VGG19.hdf5, weights.best.VGG16.hdf5 and weights.best.from_scratch.hdf5 
 
  **app:**
 - run.py: Runs the Flask web app
@@ -38,24 +35,16 @@ A machine learning application pipeline that is capable of curating the text mes
 Clone the repo using:
 > git clone https://github.com/RayalaNK/DisasterResponsePipeline.git
 
-
-Run the following commands in the project's root directory to set up your database and model.
-
-To run ETL pipeline that cleans data and stores in database
-> python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db
-
-ML pipeline that trains classifier and saves the model
-> python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
-
 Run the following command to run your web app after navigating into the app directory.
-> cd app
+> cd web_app
 
-> python run.py
+> python app.py
 
 Go to the URL:
 
 > http://0.0.0.0:3001/ or http://localhost:3001
 
+Upload an image of a dog or a human to predict the breed or resemblence respectively:
 
 **Acknowledgements**
 
