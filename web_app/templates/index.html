@@ -1,0 +1,14 @@
+<!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dog Breed Classifier</title>
+</head>
+<body>
+  <h1>Dog Breed Classifier</h1>
+  <form id="upload-form" action={{ url_for('upload') }} method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" multiple>
+    <input type="submit" value="Predict...">
+  </form>
+</body>
+</html>
