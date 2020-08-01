@@ -10,7 +10,7 @@ The objective of this application is to primarily predict whether a given image 
 
 **folder/files:**
 - dog_app.ipynb: python notebook file with fully functional code, all code cells executable
-- web_app/dog_app.html: 
+- web_app/dog_app.html: python notebook with the executed results converted to html
 - haarcascades/haarcascade_frontalface_alt: Haar feature-based cascade classifiers for face detection
 - images folder: Images for the notebook and to test the algorithm are found here
 - data/dog_names.csv: Contains names of the dog 
