@@ -38,6 +38,14 @@ Go to the URL:
 
 Upload an image of a dog or a human to predict the breed or resemblence respectively:
 
+**Project Definition** 
+
+
+
+**Analysis** 
+
+**Conclusion**
+
 **Acknowledgements**
 
 > Dog Breed Identification (https://www.kaggle.com/c/dog-breed-identification)
