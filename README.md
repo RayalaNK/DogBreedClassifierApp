@@ -25,7 +25,7 @@ The objective of this application is to primarily predict whether a given image 
 **Usage**
 
 Clone the repo using:
-> git clone https://github.com/RayalaNK/DisasterResponsePipeline.git
+> git clone https://github.com/RayalaNK/DogBreedClassifierApp.git
 
 Run the following command to run your web app after navigating into the app directory.
 > cd web_app
@@ -40,7 +40,7 @@ Upload an image of a dog or a human to predict the breed or resemblence respecti
 
 **Acknowledgements**
 
-> 
+> Dog Breed Identification (https://www.kaggle.com/c/dog-breed-identification)
 
 **Copyright and License**
 > Code is released under the MIT License.
