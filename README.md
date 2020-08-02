@@ -37,17 +37,35 @@ Go to the URL:
 > http://0.0.0.0:3001/ or http://localhost:3001
 
 Upload an image of a dog or a human to predict the breed or resemblence respectively:
+# Conclusion
+## Project Definition:
+* The objective of the project is to build a pipeline to process real-world, user-supplied images and map them to a dog breed or closer looking dog breed if human's image is given as the input. We used Convolutional Neural Networks (CNN's)  to map the breed of a dog from the input image. 
+* Given an image of a dog, the model will identify and predict the canine’s breed. 
+* If supplied an image of a human, it will identify the resembling dog breed.
 
-**Project Definition** 
+## Analysis 
+There are 2 different stages where we have done analysis.
+### Stage 1, Building own model:
+* While building **own model**, have tried different architectures by *changing the number of layers, size of filters, dropout layers* and playing with other hyper-parameters.
+* While adding more number of **fully connected** layers, have observed over-fitting our training data, as I have seen number of parameters grow quite a lot by adding fully-connected layers. So tried to **regularize** the network by adding **dropout layers**, using dropout of upto **80%** and the layers still seems to overfit; so removed some of the fully connected layers and started playing with convolution layers.
+* After removing some of the fully connected layers we observed there was less over-fitting and tried to add/change the convolution/pooling layers sizes and observed less over-fitting and increase in validation accuracy.
+* I believe, playing  with other *hyper-parameters* like **learning rate**, **different optimizers like adam** would help building a better network. 
+### Stage 2, Using an ImageNet trained backbone:
+* I have chosen Xception as my backbone first, but realized the model bottleneck_features are ~3GB and it failed when I tried to download onto this server, tried wget in the ipython notebook and also tried to download the file on to my computer and uploaded it; it reaches to 2GB and stops. So ended up using VGG19 since its way smaller than 2GB and it worked!
+* I have seen a huge jump in validation accuracy using vgg19 vs using vgg16 as a backbone.I think using Xception or ResNet architectures might give better results.
+* Transfer learning also helped to initialize the weights in a much better manner, while my own model might have got stuck in a local minima, also changing several hyper-parameters might help to increase my models accuracy as well. 
+## Conclusion 
+* Model performance was way better than excepted. 
+* VGG19 model outperformed all the previous models (VGG16 backbone).
+* Fully connected layers have more number of model parameters.
+* Adding more fully connected layers tend to overfit data, but regularizing them helps.
+* Playing with other hyper-parameters like learning rate, or different optimizers might give better results.
+* Transfer learning or using pre-trained weights to convert image features helps a lot.
 
-
-
-**Analysis** 
-
-**Conclusion**
-
+ 
 **Acknowledgements**
 
+> Udacity for providing all the data and neccessary details around the project.
 > Dog Breed Identification (https://www.kaggle.com/c/dog-breed-identification)
 
 **Copyright and License**
