@@ -37,8 +37,8 @@ Go to the URL:
 > http://0.0.0.0:3001/ or http://localhost:3001
 
 Upload an image of a dog or a human to predict the breed or resemblence respectively:
-# Conclusion
-## Project Definition:
+# Project:
+## Definition:
 * The objective of the project is to build a pipeline to process real-world, user-supplied images and map them to a dog breed or closer looking dog breed if human's image is given as the input. We used Convolutional Neural Networks (CNN's)  to map the breed of a dog from the input image. 
 * Given an image of a dog, the model will identify and predict the canine’s breed. 
 * If supplied an image of a human, it will identify the resembling dog breed.
