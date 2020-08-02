@@ -66,6 +66,7 @@ There are 2 different stages where we have done analysis.
 **Acknowledgements**
 
 > Udacity for providing all the data and neccessary details around the project.
+
 > Dog Breed Identification (https://www.kaggle.com/c/dog-breed-identification)
 
 **Copyright and License**
