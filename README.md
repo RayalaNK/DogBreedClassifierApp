@@ -68,9 +68,9 @@ There are 2 different stages where we have done analysis.
 ##### Accuracy
 ![Validation Accuracy](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/ValidationAccuracy.png)
 
-Test accuracy naresh model: 5.9809%
-Ran for 100 epochs each.och
- |Model | test accuracy| 
+Ran the model for **100 epochs** separately and brought the results: 
+
+ |Model | Test Accuracy| 
  |------|--------------|
  | Naresh | 23.56% |
  | vgg16 | 52.99% |
