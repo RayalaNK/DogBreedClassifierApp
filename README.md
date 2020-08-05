@@ -54,6 +54,28 @@ There are 2 different stages where we have done analysis.
 * I have chosen Xception as my backbone first, but realized the model bottleneck_features are ~3GB and it failed when I tried to download onto this server, tried wget in the ipython notebook and also tried to download the file on to my computer and uploaded it; it reaches to 2GB and stops. So ended up using VGG19 since its way smaller than 2GB and it worked!
 * I have seen a huge jump in validation accuracy using vgg19 vs using vgg16 as a backbone.I think using Xception or ResNet architectures might give better results.
 * Transfer learning also helped to initialize the weights in a much better manner, while my own model might have got stuck in a local minima, also changing several hyper-parameters might help to increase my models accuracy as well. 
+
+### Model Metrics
+#### Training
+##### Loss
+![Training Loss](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/TrainingLoss.png)
+##### Accuracy
+![Training Accuracy](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/TrainingAccuracy.png)
+
+#### Validation
+##### Loss
+
+##### Accuracy
+
+
+Test accuracy naresh model: 5.9809%
+Ran for 100 epochs each.och
+ |Model | test accuracy| 
+ |------|--------------|
+ | Naresh | 5.9809% |
+ | vgg16 | |
+ | vgg 19 | |
+
 ## Conclusion 
 * Model performance was way better than excepted. 
 * VGG19 model outperformed all the previous models (VGG16 backbone).
