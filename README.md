@@ -69,16 +69,37 @@ There are 2 different stages where we have done analysis.
 ![Validation Accuracy](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/ValidationAccuracy.png)
 
 Ran the model for **100 epochs** separately and brought the results: 
+#### Tesiting Metrics
 
+##### Accuracy
  |Model | Test Accuracy| 
  |------|--------------|
  | Naresh | 23.56% |
  | vgg16 | 52.99% |
  | vgg 19 | 35.89% |
+ 
+##### Confusion matrix
+
+* **Naresh Model**
+
+  ![Naresh model](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/naresh_model_cm.png)
+
+* **vgg16 Model**
+
+  ![vgg16](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/vgg16_model_cm.png)
+
+* **vgg19 Model**
+
+  ![vgg19](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/vgg19_model_cm.png)
+
+ * Train and test accuracy of VGG19 model is way better but test accuracy seems to be low.
+ * Increasing number of test samples may give a better picture of how VGG19 is performing. 
+
+
 
 ## Conclusion 
 * Model performance was way better than excepted. 
-* VGG19 model outperformed all the previous models (VGG16 backbone).
+* VGG19 model outperformed all the previous models (VGG16 backbone) in both training and validation.
 * Fully connected layers have more number of model parameters.
 * Adding more fully connected layers tend to overfit data, but regularizing them helps.
 * Playing with other hyper-parameters like learning rate, or different optimizers might give better results.
