@@ -107,20 +107,17 @@ Ran the model for **100 epochs** separately and brought the results:
   * vgg19 predicts Alaskan_malamute, American_eskimo_dog, Basset_hound and lot of other breeds with atmost accuracy. 
   * Airedale_terrier, American_foxhound, Australina_terrier and few other breeds aren't being predicted properly. 
   * American_staffordshire_terrier is predicted well on most occassions howeever it is also predicted to be Anatolian_shepard_dog, Basenji, Boston_terrier, Boxer also 
- 
-
- * Train and test accuracy of VGG19 model is way better but test accuracy seems to be low.
- * Increasing number of test samples may give a better picture of how VGG19 is performing. 
 
 
 
 ## Conclusion 
 * Model performance was way better than excepted. 
-* VGG19 model outperformed all the previous models (VGG16 backbone) in both training and validation.
+* VGG19 model outperformed all the previous models (VGG16 backbone).
 * Fully connected layers have more number of model parameters.
 * Adding more fully connected layers tend to overfit data, but regularizing them helps.
 * Playing with other hyper-parameters like learning rate, or different optimizers might give better results.
 * Transfer learning or using pre-trained weights to convert image features helps a lot.
+* We can infer more details from the confusion matrix and collect more data points or add augmentation to the most confused classes would increase our test accuracy. 
 
  
 **Acknowledgements**
