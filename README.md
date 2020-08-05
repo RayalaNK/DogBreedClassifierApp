@@ -46,7 +46,7 @@ Upload an image of a dog or a human to predict the breed or resemblence respecti
 ## Analysis 
 
 ### Input:
-There are a total of 133 dog categories and 8351 total dog images. All the models discussed below are using 6680 training images, 835 validation images and 836 test images.
+There are a total of 133 dog categories and 8351 dog images. All the models discussed below are using 6680 training images, 835 validation images and 836 test images.
 
 There are 2 different stages where we have done analysis.
 ### Stage 1, Building own model:
