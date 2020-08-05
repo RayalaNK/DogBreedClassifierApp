@@ -76,21 +76,34 @@ Ran the model for **100 epochs** separately and brought the results:
  |------|--------------|
  | Naresh | 23.56% |
  | vgg16 | 52.99% |
- | vgg 19 | 35.89% |
+ | vgg 19 | 57.65% |
  
 ##### Confusion matrix
 
 * **Naresh Model**
 
   ![Naresh model](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/naresh_model_cm.png)
+  
+  * Naresh model is unable to recognize Afghan_hound and predicting it as Anatolian_shepard_dog, Border_terrier and other breeds 
+  * American_eskimo_dog is being predicted very well
+  * Beagle is predicted well but occassionally the model identifies it as Basenji or Basset_hound
 
 * **vgg16 Model**
 
   ![vgg16](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/vgg16_model_cm.png)
 
+  * vgg16 model predicts Afghan_hound correctly sometimes and it's mistaken equal amount of times. 
+  * Bluetick_coonhound, Border_Collie is being predicted accurately most of the times.
+  * Pomeranian is predicted as Papilon, Cocker_spaniel few times but it's mostly accurate in preidicting it as Pomeranian.
+
 * **vgg19 Model**
 
   ![vgg19](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/vgg19_model_cm.png)
+
+  * vgg19 predicts Alaskan_malamute, American_eskimo_dog, Basset_hound and lot of other breeds with atmost accuracy. 
+  * Airedale_terrier, American_foxhound, Australina_terrier and few other breeds aren't being predicted properly. 
+  * American_staffordshire_terrier is predicted well on most occassions howeever it is also predicted to be Anatolian_shepard_dog, Basenji, Boston_terrier, Boxer also 
+ 
 
  * Train and test accuracy of VGG19 model is way better but test accuracy seems to be low.
  * Increasing number of test samples may give a better picture of how VGG19 is performing. 
