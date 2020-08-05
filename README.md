@@ -64,17 +64,17 @@ There are 2 different stages where we have done analysis.
 
 #### Validation
 ##### Loss
-
+![Validation Loss](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/ValidationLoss.png)
 ##### Accuracy
-
+![Validation Accuracy](https://github.com/RayalaNK/DogBreedClassifierApp/blob/master/images/ValidationAccuracy.png)
 
 Test accuracy naresh model: 5.9809%
 Ran for 100 epochs each.och
  |Model | test accuracy| 
  |------|--------------|
- | Naresh | 5.9809% |
- | vgg16 | |
- | vgg 19 | |
+ | Naresh | 23.56% |
+ | vgg16 | 52.99% |
+ | vgg 19 | 35.89% |
 
 ## Conclusion 
 * Model performance was way better than excepted. 
